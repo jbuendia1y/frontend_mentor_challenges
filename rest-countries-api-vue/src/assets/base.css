@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-weight: normal;
+  src: local("Nutino Sans"), url("./assets/fonts/NutinoSans-Light.ttf");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-weight: 600;
+  src: local("Nutino Sans"), url("./assets/fonts/NutinoSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-weight: 800;
+  src: local("Nutino Sans"), url("./assets/fonts/NutinoSans-ExtraBold.ttf");
+}
+
+body {
+  line-height: 1.6;
+  font-family: "Nutino Sans", Inter, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+    "Helvetica Neue";
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
