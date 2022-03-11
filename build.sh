@@ -16,7 +16,7 @@ NPM_PROJECTS=("/rest-countries-api-vue")
 
 for i in ${NPM_PROJECTS[@]};do
     cd $DIR$i
-    npm i
+    npm ci
     npm run build  
 done
 
