@@ -31,6 +31,6 @@ jobs:
       run: 
         git config --global user.name 'jbuendia1y'
         git config --global user.email 'jgamer669@gmail.com'
-        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        git remote set-url origin https://x-access-token:${{ secrets.TOKEN_SECRET }}@github.com/${{ github.repository }}
         git add gh-pages && git commit -m "Deply gh-pages"
         git subtree push --prefix gh-pages origin gh-pages
