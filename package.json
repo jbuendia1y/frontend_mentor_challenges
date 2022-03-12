@@ -1,0 +1,33 @@
+{
+  "name": "frontend_mentor_challenges",
+  "version": "1.0.0",
+  "description": "Retos de frontendMentor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "build": "bash build.sh",
+    "deploy": "npm run build && npm run start && rm -r gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbuendia1y/frontend_mentor_challenges.git"
+  },
+  "keywords": [
+    "FrontendMentor",
+    "Challenges",
+    "Github Pages",
+    "npm",
+    "yarn",
+    "vite"
+  ],
+  "author": "Joaquín Buendía",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbuendia1y/frontend_mentor_challenges/issues"
+  },
+  "homepage": "https://github.com/jbuendia1y/frontend_mentor_challenges#readme",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
