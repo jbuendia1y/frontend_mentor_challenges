@@ -3,7 +3,9 @@ const path = require("path");
 
 const ghpagesDir = path.join(__dirname, "../gh-pages");
 
-console.time("Publicando");
+const timeLabel = "Publicado a Github Pages";
+
+console.time(timeLabel);
 ghpages.publish(ghpagesDir, () => {
-  console.timeEnd("Publicado a Github Pages");
+  console.timeEnd(timeLabel);
 });
