@@ -32,6 +32,9 @@ cd $DIR$MAIN_PROJECT
 yarn
 yarn build
 
+cd $DIR/publish-gh-pages
+yarn
+
 cd $DIR
 mkdir $GH_PAGES_FOLDER
 
