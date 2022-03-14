@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=https://jbuendia1y.github.io/frontend_mentor_challenges/",
     "preview": "vite preview"
   },
   "devDependencies": {
