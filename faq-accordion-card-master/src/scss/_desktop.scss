@@ -1,0 +1,42 @@
+.desktop{
+    &__box{
+        display: none;
+        @media screen and (min-width:1024px){
+            display: block;
+            position: absolute;
+            z-index: 2;
+            bottom: 120px;
+            left: -95px;
+        }
+        
+    }
+
+    &__img{
+
+        &-woman,&-bg{
+            position: absolute;
+        }
+
+        &-woman{
+            z-index: 1;
+            top: 70px;
+            right: -20px;
+        }
+
+        &-bg{
+            z-index: 0;
+            width: 280%;
+            right: -20px;
+            bottom: -170px;
+        }
+    }
+}
+
+.box{
+    margin-top: auto;
+    @media screen and (min-width:1024px)  {
+        position: relative;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
