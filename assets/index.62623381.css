@@ -1,0 +1,1 @@
+body{text-align:center}#challenges-filter{display:flex;justify-content:center}#challenges{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:20px}.challenge{overflow:hidden;border-radius:10px;max-width:300px;box-shadow:1px 1px 2px #bfbfbf}.challenge h1{font-size:25px}

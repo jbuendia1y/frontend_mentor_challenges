@@ -11,6 +11,10 @@
     />
     <meta name="keywords" content="github pages" />
     <meta name="author" content="Joaquín Buendía" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css"
+    />
 
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
     <meta name="og:title" content="Frontend Mentor Challenges" />
@@ -24,8 +28,8 @@
     />
     <meta name="og:type" content="website" />
     <title>Frontend Mentor Challenges</title>
-    <script type="module" crossorigin src="https://jbuendia1y.github.io/frontend_mentor_challenges/assets/index.42fe4937.js"></script>
-    <link rel="stylesheet" href="https://jbuendia1y.github.io/frontend_mentor_challenges/assets/index.3ba5c1b3.css">
+    <script type="module" crossorigin src="https://jbuendia1y.github.io/frontend_mentor_challenges/assets/index.91ffa2b3.js"></script>
+    <link rel="stylesheet" href="https://jbuendia1y.github.io/frontend_mentor_challenges/assets/index.62623381.css">
   </head>
   <body>
     <h1>Frontend Mentor Challenges</h1>
@@ -33,26 +37,23 @@
       Retos realizados de
       <a href="https://frontendmentor.io/" target="_blank">FrontendMentor</a>
     </p>
-    <ul>
-      <li>
-        <a
-          href="https://jbuendia1y.github.io/frontend_mentor_challenges/rest-countries-api-vue"
-          >Rest Coutries Api Vue</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://jbuendia1y.github.io/frontend_mentor_challenges/social-media-dashboard-theme-switcher"
-          >Social Media Dashboard Theme Switcher</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://jbuendia1y.github.io/frontend_mentor_challenges/faq-accordion-card-master"
-          >FAQ Accordion card</a
-        >
-      </li>
-    </ul>
+    <form id="challenges-filter">
+      <div>
+        <input
+          type="text"
+          name="name"
+          placeholder="FAQ Accordion card"
+          aria-label="Buscar"
+        />
+      </div>
+      <div>
+        <select name="technology" id="technologies" aria-label="Tecnologías">
+          <option value="">Todas</option>
+        </select>
+      </div>
+      <button type="submit">Search</button>
+    </form>
+    <section id="challenges"></section>
     <footer>
       <div>
         <p>
