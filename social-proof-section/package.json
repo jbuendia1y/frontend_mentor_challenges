@@ -1,0 +1,14 @@
+{
+  "name": "social-proof-section",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=https://jbuendia1y.github.io/frontend_mentor_challenges/social-proof-section/",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.62.1",
+    "vite": "^4.3.3"
+  }
+}
