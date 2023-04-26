@@ -11,6 +11,10 @@
     />
     <meta name="keywords" content="github pages" />
     <meta name="author" content="Joaquín Buendía" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css"
+    />
 
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
     <meta name="og:title" content="Frontend Mentor Challenges" />
@@ -31,26 +35,23 @@
       Retos realizados de
       <a href="https://frontendmentor.io/" target="_blank">FrontendMentor</a>
     </p>
-    <ul>
-      <li>
-        <a
-          href="https://jbuendia1y.github.io/frontend_mentor_challenges/rest-countries-api-vue"
-          >Rest Coutries Api Vue</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://jbuendia1y.github.io/frontend_mentor_challenges/social-media-dashboard-theme-switcher"
-          >Social Media Dashboard Theme Switcher</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://jbuendia1y.github.io/frontend_mentor_challenges/faq-accordion-card-master"
-          >FAQ Accordion card</a
-        >
-      </li>
-    </ul>
+    <form id="challenges-filter">
+      <div>
+        <input
+          type="text"
+          name="name"
+          placeholder="FAQ Accordion card"
+          aria-label="Buscar"
+        />
+      </div>
+      <div>
+        <select name="technology" id="technologies" aria-label="Tecnologías">
+          <option value="">Todas</option>
+        </select>
+      </div>
+      <button type="submit">Search</button>
+    </form>
+    <section id="challenges"></section>
     <footer>
       <div>
         <p>
@@ -62,6 +63,6 @@
         </p>
       </div>
     </footer>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>

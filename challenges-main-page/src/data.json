@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Rest Coutries Api Vue",
+    "url": "https://jbuendia1y.github.io/frontend_mentor_challenges/rest-countries-api-vue",
+    "preview": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_900/Screenshots/pavotebqjxs6i3ijpsq6.jpg",
+    "technologies": ["VueJS", "ViteJS"]
+  },
+  {
+    "name": "Social Media Dashboard Theme Switcher",
+    "url": "https://jbuendia1y.github.io/frontend_mentor_challenges/social-media-dashboard-theme-switcher",
+    "preview": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_900/Screenshots/ff1kkcllosfoncuokv3l.jpg",
+    "technologies": ["ReactJS", "ViteJS"]
+  },
+  {
+    "name": "FAQ Accordion card",
+    "url": "https://jbuendia1y.github.io/frontend_mentor_challenges/faq-accordion-card-master",
+    "preview": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_900/Screenshots/mzlo4ewkqudviimulv6a.jpg",
+    "technologies": ["Vanilla", "ViteJS", "SCSS"]
+  },
+  {
+    "name": "Social Proof Section",
+    "url": "https://jbuendia1y.github.io/frontend_mentor_challenges/social-proof-section/",
+    "preview": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_900/Screenshots/fkotktogpxf90pcdxhq3.jpg",
+    "technologies": ["Vanilla", "ViteJS", "SCSS"]
+  }
+]
