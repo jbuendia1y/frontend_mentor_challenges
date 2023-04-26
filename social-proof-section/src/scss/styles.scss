@@ -1,0 +1,48 @@
+/* Variables */
+$text-color:hsl(300, 43%, 22%);
+$text-color-userSub:hsl(333, 80%, 67%);
+
+$text-color-2:hsl(303, 10%, 53%);
+$bg-stars:hsl(300, 24%, 96%);
+$white:hsl(0, 0%, 100%);
+
+$font-family : 'Spartan', sans-serif;
+
+/* Imports */
+@import "main";
+@import "item";
+@import "users";
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+/* Base */
+body{
+    font-size: 15px;
+    font-family: $font-family;
+    
+    background-image: url(/images/bg-pattern-top-mobile.svg),url(/images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top , bottom;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width:1024px){
+    body{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url(/images/bg-pattern-top-desktop.svg),url(/images/bg-pattern-bottom-desktop.svg);
+    }
+
+    .attribution{
+        margin-top: auto;
+    }
+}
