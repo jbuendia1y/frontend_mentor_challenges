@@ -12,7 +12,12 @@ filterForm.addEventListener("submit", async (e) => {
     technologies: technology.length > 0 ? technology : null,
   };
 
-  await filter(filters);
+  const formatFilters = {};
+  for (const key of Object.keys(filters)) {
+    if (filters[key]) formatFilters[key] = filters[key];
+  }
+
+  await filter(formatFilters);
 });
 
 const filter = async (fields) => {
@@ -25,18 +30,18 @@ const filter = async (fields) => {
 
   renderChallenges(
     challenges.filter((v) => {
-      for (const k of Object.keys(fields)) {
-        if (!fields[k]) continue;
-        if (Array.isArray(v[k])) {
-          if (v[k].some((v) => v.includes(fields[k]))) {
-            return true;
-          } else return false;
-        }
+      const nameEquals = fields.name
+        ? v.name.toLocaleLowerCase() === fields.name.toLocaleLowerCase()
+        : true;
 
-        if (v[k].includes(fields[k])) return true;
+      const hasTech = fields.technologies
+        ? v.technologies.some(
+            (v) =>
+              v.toLocaleLowerCase() === fields.technologies.toLocaleLowerCase()
+          )
+        : true;
 
-        return false;
-      }
+      return nameEquals && hasTech;
     })
   );
 };
@@ -52,7 +57,22 @@ const challengeTemplate = (data) => {
   image.loading = "lazy";
   image.src = data.preview;
 
-  article.append(image, title);
+  const actions = document.createElement("div");
+  actions.className = "challenge__actions";
+
+  const codeButton = document.createElement("a");
+  codeButton.textContent = "Código";
+  codeButton.className = "button button-light";
+  codeButton.href = data.repository;
+
+  const visitButton = document.createElement("a");
+  visitButton.textContent = "Ver más";
+  visitButton.className = "button button-primary";
+  visitButton.href = data.url;
+
+  actions.append(codeButton, visitButton);
+
+  article.append(image, title, actions);
   return article;
 };
 

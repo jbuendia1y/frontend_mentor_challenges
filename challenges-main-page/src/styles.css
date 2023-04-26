@@ -5,6 +5,8 @@ body{
 #challenges-filter{
     display: flex;
     justify-content: center;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
 #challenges {
@@ -25,4 +27,28 @@ body{
 
 .challenge h1 {
     font-size: 25px;
+}
+
+.challenge__actions{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.button{
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.button-light{
+    border: 1px solid rgb(171, 171, 171);
+    color: var(--form-text);
+}
+
+.button-primary{
+    background-color: mediumslateblue;
+    border: 1px solid mediumslateblue;
+    color: white;
 }
