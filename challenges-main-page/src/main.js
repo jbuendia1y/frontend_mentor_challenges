@@ -53,9 +53,14 @@ const challengeTemplate = (data) => {
   const title = document.createElement("h1");
   title.textContent = data.name;
 
+  const imagePreview = document.createElement("div");
+  imagePreview.className = "challenge__preview";
+
   const image = document.createElement("img");
   image.loading = "lazy";
   image.src = data.preview;
+
+  imagePreview.append(image);
 
   const actions = document.createElement("div");
   actions.className = "challenge__actions";
@@ -72,7 +77,7 @@ const challengeTemplate = (data) => {
 
   actions.append(codeButton, visitButton);
 
-  article.append(image, title, actions);
+  article.append(imagePreview, title, actions);
   return article;
 };
 
