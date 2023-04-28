@@ -1,0 +1,17 @@
+{
+  "name": "url-shortening-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=https://jbuendia1y.github.io/frontend_mentor_challenges/url-shortening-api/",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.62.1",
+    "vite": "^4.3.3"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
