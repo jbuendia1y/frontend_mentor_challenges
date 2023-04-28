@@ -10,7 +10,7 @@ fi
 
 echo Work Directory $DIR
 
-PROJECTS=("/rest-countries-api-vue" "/social-media-dashboard-theme-switcher" "/faq-accordion-card-master" "/social-proof-section")
+PROJECTS=("/rest-countries-api-vue" "/social-media-dashboard-theme-switcher" "/faq-accordion-card-master" "/social-proof-section" "/url-shortening-api")
 
 for i in ${PROJECTS[@]};do
     cd $DIR$i
