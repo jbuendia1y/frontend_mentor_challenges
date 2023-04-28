@@ -7,10 +7,15 @@ if [ -d "$GH_PAGES_FOLDER" ]; then
     rm -r $GH_PAGES_FOLDER
 fi
 
-
 echo Work Directory $DIR
 
-PROJECTS=("/rest-countries-api-vue" "/social-media-dashboard-theme-switcher" "/faq-accordion-card-master" "/social-proof-section" "/url-shortening-api")
+PROJECTS=$(for i in $(find -maxdepth 1 -type d \
+    ! -path "./node_modules" \
+    ! -path "./.git" \
+    ! -path "./.github" \
+    ! -path "./libs" \
+    ! -path "./challenges-main-page" \
+    ! -path "."); do echo ${i:1};done)
 
 for i in ${PROJECTS[@]};do
     cd $DIR$i
