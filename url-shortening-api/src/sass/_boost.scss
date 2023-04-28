@@ -1,6 +1,6 @@
 .boost{
     background-color: $DarkViolet;
-    background-image: url('/static/images/bg-boost-mobile.svg');
+    background-image: url('/images/bg-boost-mobile.svg');
     background-position: right;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@
 
 @media screen and (min-width:1024px){
     .boost{
-        background-image: url('/static/images/bg-boost-desktop.svg');
+        background-image: url('/images/bg-boost-desktop.svg');
 
         &__title{
             font-size: 2em;

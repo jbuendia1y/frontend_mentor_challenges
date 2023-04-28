@@ -5,7 +5,7 @@
 
     &Form{
         background-color: $DarkViolet;
-        background-image: url('/static/images/bg-shorten-mobile.svg');
+        background-image: url('/images/bg-shorten-mobile.svg');
         background-repeat: no-repeat;
         background-position: right top;
         background-size: 80% 80%;
@@ -157,7 +157,7 @@
             flex-direction: row;
             padding: 2em;
 
-            background-image: url('/static/images/bg-shorten-desktop.svg');
+            background-image: url('/images/bg-shorten-desktop.svg');
             background-size: 100%;
 
             &__field{
