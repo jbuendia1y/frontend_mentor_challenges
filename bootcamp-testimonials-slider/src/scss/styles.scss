@@ -1,0 +1,49 @@
+/* Variables */
+
+$text-color: hsl(240, 38%, 20%);
+$span-color: hsl(240, 18%, 77%);
+
+$texts : 'Inter', sans-serif;
+
+/* Imports */
+
+@import "user";
+@import "person";
+@import "active";
+@import "box-container";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+/* Base */
+
+body{
+    height: 100vh;
+    font-size: 32px;
+    background-image: url(/images/pattern-curve.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.attribution {
+    bottom: 0;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width:1024px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-size: 45%;
+    }
+    .attribution{
+        position: absolute;
+        bottom: 0;
+    }
+}

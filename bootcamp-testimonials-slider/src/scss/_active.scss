@@ -1,0 +1,41 @@
+.active{
+    &__person{
+        display: block;
+        max-width: 100%;
+
+        visibility: visible;
+        width: auto;
+        height: 250px;
+        position: relative;
+        z-index: 1;
+
+        box-shadow: -40px 3em 100px -80px gray;
+    }
+
+    &__user{
+        display: flex;
+        flex-direction: column;
+
+        visibility: visible;
+        height: auto;
+        width: auto;
+    }
+
+}
+
+@media screen and (min-width:1024px){
+    .active{
+        &__person{
+            height: 350px;
+            box-shadow: 0 2em 3em -49px gray;
+        }
+    }
+}
+
+@media screen and (min-width:1440px){
+    .active{
+        &__person{
+            height: 500px;
+        }
+    }
+}
