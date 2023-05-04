@@ -1,0 +1,20 @@
+@media screen and (min-width:1024px){
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 5%;
+
+        height: 414px;
+        width: 1007px;
+    }
+}
+
+@media screen and (min-width:1440px){
+    .box-container{
+        height: auto;
+        width: auto;
+    }
+}

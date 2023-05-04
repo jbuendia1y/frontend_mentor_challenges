@@ -1,0 +1,87 @@
+.person{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    margin-top: 1em;
+    padding-bottom: 1em;
+
+    &__img{
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+
+    &__buttons{
+        position: absolute;
+        z-index: 100;
+        bottom: 10px;
+        background-color: white;
+
+        display: grid;
+        grid-template-columns: repeat(2,40px);
+        grid-template-rows: 40px;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+
+        border: none;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        border-top-right-radius: 40px;
+    }
+
+    &__bg{
+        position: absolute;
+        max-width: 100%;
+        height: 300px;
+        z-index: 0;
+    }
+}
+
+.button{
+    &-prev,&-next{
+        padding: .3em;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .person{
+
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-right: 2em;
+        position: relative;
+        z-index: 0;
+        left: -85px;
+
+        &__buttons{
+            left: 22%;
+        }
+
+        &__bg{
+            height: 425px;
+            bottom: -2px;
+        }
+    }
+}
+
+
+@media screen and (min-width:1440px){
+    .person{
+        &__bg{
+            height: 600px;
+            bottom: -10px;
+        }
+
+        &__buttons{
+            grid-template-columns: repeat(2,50px);
+            grid-template-rows: 50px;
+
+            left: 150px;
+        }
+    }
+}
