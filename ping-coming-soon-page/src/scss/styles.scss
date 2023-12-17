@@ -1,0 +1,38 @@
+/* Variables */
+$color-Blue: hsl(223, 87%, 63%);
+$color-PaleBlue: hsl(223, 100%, 88%);
+$color-Red: hsl(354, 100%, 66%);
+$color-Gray: hsl(0, 0%, 59%);
+$color-DarkBlue: hsl(209, 33%, 12%);
+
+$font : 'Libre Franklin', sans-serif;
+
+
+/* Imports */
+@import "box-container";
+@import "main-text";
+@import "form";
+@import "img";
+@import "footer";
+@import "active";
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+
+/* Base */
+body{
+    font-size: 20px;
+    font-family: $font;
+
+    height: 100vh;
+}
+
+footer{
+    grid-row: 3/4;
+    padding-bottom: 1em;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+}
+.attribution a { color: hsl(228, 45%, 44%); }

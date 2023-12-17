@@ -1,0 +1,29 @@
+.box-container{
+    margin-top: 3.5em;
+    margin-bottom: auto;
+
+    display: grid;
+    grid-template-columns: 85%;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.box{
+    display: grid;
+    grid-template-rows: auto 80px auto;
+    justify-content: center;
+}
+
+@media screen and (min-width:1024px){
+    .box{
+        grid-template-columns: 75%;
+        grid-template-rows: auto 50px auto;
+    }
+}
+@media screen and (min-width:1440px){
+    .box{
+        grid-template-columns: 65%;
+    }
+}
