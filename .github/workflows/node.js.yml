@@ -25,4 +25,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
     - run: yarn
-    - run: yarn run deploy
+    - run: |
+        git config user.name jbuendia1y
+        git config user.email jgamer669@gmail.com
+        yarn run deploy
