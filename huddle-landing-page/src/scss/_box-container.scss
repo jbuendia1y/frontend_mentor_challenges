@@ -1,0 +1,14 @@
+.box-container{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+
+    margin-top: 2em;
+}
+
+@media screen and (min-width:1024px){
+    .box-container{
+        grid-template-columns: 95%;
+        margin-top: 0;
+    }
+}

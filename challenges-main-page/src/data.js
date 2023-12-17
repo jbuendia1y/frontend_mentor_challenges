@@ -71,4 +71,13 @@ export default [
       "https://github.com/jbuendia1y/frontend_mentor_challenges/assets/71197875/ab24fdae-248a-4c5a-9048-ead5538e6fb3",
     technologies: ["Vanilla", "ViteJS", "SCSS"],
   },
+  {
+    name: "Huddle landing page",
+    url: "https://jbuendia1y.github.io/frontend_mentor_challenges/huddle-landing-page",
+    repository:
+      "https://github.com/jbuendia1y/frontend_mentor_challenges/tree/main/huddle-landing-page",
+    preview:
+      "https://github.com/jbuendia1y/frontend_mentor_challenges/assets/71197875/c42b5e8f-3f26-4e67-83f1-8fce441fb2c8",
+    technologies: ["Vanilla", "ViteJS", "SCSS"],
+  },
 ];
