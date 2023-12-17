@@ -21,7 +21,7 @@ filterForm.addEventListener("submit", async (e) => {
 });
 
 const filter = async (fields) => {
-  const challenges = await import("./data.json").then((v) => v.default);
+  const challenges = await import("./data.js").then((v) => v.default);
   const noFilters = Object.values(fields).every((v) => v === null);
   if (noFilters) {
     renderChallenges(challenges);
@@ -99,7 +99,7 @@ const renderChallenges = (data) => {
 };
 
 const appendTechnologies = async () => {
-  const technologies = await import("./data.json").then((v) =>
+  const technologies = await import("./data.js").then((v) =>
     v.default.map((v) => v.technologies).flat()
   );
 
@@ -121,6 +121,6 @@ const appendTechnologies = async () => {
 
 window.addEventListener("DOMContentLoaded", async () => {
   await appendTechnologies();
-  const challenges = await import("./data.json").then((v) => v.default);
+  const challenges = await import("./data.js").then((v) => v.default);
   renderChallenges(challenges);
 });

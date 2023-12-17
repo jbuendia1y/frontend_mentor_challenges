@@ -1,0 +1,108 @@
+.user{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+
+    position: relative;
+
+    font-family: $texts;
+
+    &__data,&__job,&__text,&__name{
+        margin: 0;
+    }
+
+    &__text{
+        font-weight: 300;
+        font-size: .6em;
+        text-align: center;
+        color: $text-color;
+
+        padding: 0 1em;
+
+        line-height: 25px;
+    }
+
+    &__data{
+        text-align: center;
+    }
+
+    &__name{
+        font-size: .5em;
+        margin-top: 1em;
+        color: $text-color;
+    }
+
+    &__job{
+        font-size: .4em;
+        margin-top: .2em;
+        color: $span-color;
+    }
+
+    &__img{
+        position: absolute;
+        z-index: 0;
+        top: 10px;
+        left: 40%;
+
+        display: block;
+        height: 50px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .user{
+        padding-top: 1.5em;
+        margin-left: 2em;
+        z-index: 100;
+
+        &__img{
+            height: 70px;
+            left: 15%;
+            top: 0;
+        }
+
+        &__text,&__data{
+            text-align: left;
+            padding: 0;
+        }
+
+        &__text{
+            font-size: .7em;
+            line-height: 30px;
+        }
+
+        &__data{
+            margin-top: .5em;
+        }
+
+        &__job,&__name{
+            display: inline-block;
+        }
+
+        &__name{
+            margin-right: 0;
+        }
+
+    }
+}
+
+@media screen and (min-width:1440px){
+    .user{
+
+        left: 50px;
+
+        &__text{
+            font-size: 1em;
+            line-height: 40px;
+            padding-right: .5em;
+        }
+
+        &__name,&__job{
+            font-size: .7em;
+        }
+    }
+}
