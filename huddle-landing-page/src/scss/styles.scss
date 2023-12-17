@@ -1,0 +1,44 @@
+/* Variables */
+$color-Purple: hsl(257, 40%, 49%);
+$color-Pink: hsl(300, 69%, 71%);
+$color-white: hsl(0, 0%, 100%);
+$color-white2: hsl(0, 0%, 95%);
+$color-DarkPurple: hsl(257, 42%, 38%);
+
+$font-Poppins: 'Poppins', sans-serif;
+$font-Sans: 'Open Sans', sans-serif;
+
+/* Imports */
+@import "box-container";
+@import "header";
+@import "box";
+@import "footer";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Base */
+body{
+    font-family: $font-Sans;
+    background-color: $color-Purple;
+    background-image: url(/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width:1024px){
+    body{
+        background-image: url(/images/bg-desktop.svg);
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .attribution{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}

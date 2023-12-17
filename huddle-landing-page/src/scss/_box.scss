@@ -1,0 +1,109 @@
+.box{
+    margin-top: 3em;
+    text-align: center;
+
+    &__img{
+        margin-bottom: 2.5em;
+
+        &-width{
+            max-width: 100%;
+        }
+    }
+
+    &__title,&__link{
+        font-family: $font-Poppins;
+    }
+
+    &__title{
+        font-size: 1.5em;
+        line-height: 35px;
+        color: $color-white;
+    }
+
+    &__paragraph{
+        color: $color-white2;
+        font-size: .9em;
+        line-height: 21px;
+        padding: 0 .3em;
+    }
+
+    &__link{
+        display: block;
+        text-decoration: none;
+        color: $color-Purple;
+
+        width: 60%;
+        padding: .8em 1em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.5em;
+
+        background-color: $color-white;
+
+        border-radius: 20px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .box{
+        display: flex;
+
+        &__img{
+            width: 55%;
+        }
+
+        &__text{
+            margin-top: 1.5em;
+            margin-bottom: auto;
+            margin-left: 1.5em;
+            width: 45%;
+
+            text-align: left;
+        }
+
+        &__title{
+            font-size: 2em;
+        }
+
+        &__paragraph{
+            font-size: .8em;
+        }
+
+        &__link{
+            width: 30%;
+            display: inline-block;
+            margin-top: .2em;
+
+            text-align: center;
+
+            box-shadow: 0 0 1em .2em $color-DarkPurple;
+
+            &:hover{
+                background-color: $color-Pink;
+                color: $color-white;
+                transition: all .8s;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1360px){
+    .box{
+        margin-top: 4em;
+
+        &__title{
+            font-size: 3em;
+            line-height: 55px;
+        }
+
+        &__paragraph{
+            font-size: 1.2em;
+            line-height: 27px;
+        }
+
+        &__link{
+            font-size: 1.4em;
+            border-radius: 40px;
+        }
+    }
+}

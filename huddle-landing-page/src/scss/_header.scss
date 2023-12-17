@@ -1,0 +1,13 @@
+.logo{
+    width: 45%;
+    &__img{
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .logo{
+        width: 17%;
+        margin-top: 2em;
+    }
+}

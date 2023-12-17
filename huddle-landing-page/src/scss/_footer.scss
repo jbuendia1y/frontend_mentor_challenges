@@ -1,0 +1,42 @@
+.footer{
+    margin-top: 4em;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0 .5em;
+        width: 50px;
+        height: 50px;
+
+        border: 1px solid $color-white;
+        border-radius: 50%;
+        color: white;
+
+        &:hover{
+            border: 1px solid $color-Pink;
+            color: $color-Pink;
+            transition: all .8s;
+        }
+    }
+    &__img{
+        padding: .3em;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .footer{
+        margin-top: auto;
+        justify-self: right;
+    }
+
+    .icon{
+        justify-content: right;
+    }
+}
