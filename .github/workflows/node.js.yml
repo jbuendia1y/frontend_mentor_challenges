@@ -26,6 +26,6 @@ jobs:
         cache: 'yarn'
     - run: yarn
     - run: |
-        git config user.name jbuendia1y
-        git config user.email jgamer669@gmail.com
+        git config --global user.name jbuendia1y
+        git config --global user.email jgamer669@gmail.com
         yarn run deploy
