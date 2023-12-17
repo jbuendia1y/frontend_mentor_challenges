@@ -62,4 +62,13 @@ export default [
       "https://github.com/jbuendia1y/frontend_mentor_challenges/assets/71197875/9718c0b3-2053-43b0-a663-329eaf856854",
     technologies: ["Vanilla", "ViteJS", "SCSS"],
   },
+  {
+    name: "Ping coming soon page",
+    url: "https://jbuendia1y.github.io/frontend_mentor_challenges/ping-coming-soon-page",
+    repository:
+      "https://github.com/jbuendia1y/frontend_mentor_challenges/tree/main/ping-coming-soon-page",
+    preview:
+      "https://github.com/jbuendia1y/frontend_mentor_challenges/assets/71197875/ab24fdae-248a-4c5a-9048-ead5538e6fb3",
+    technologies: ["Vanilla", "ViteJS", "SCSS"],
+  },
 ];
