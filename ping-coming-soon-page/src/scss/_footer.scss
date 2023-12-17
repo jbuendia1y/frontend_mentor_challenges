@@ -1,0 +1,28 @@
+.icons{
+    display: flex;
+    justify-content: center;
+
+    &__item{
+        width: 20px;
+        height: 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .5em;
+        margin: 0 .5em;
+
+        border-radius: 50%;
+        border: 1px solid $color-PaleBlue;
+    }
+
+    &__img{
+        color: $color-Blue;
+    }
+}
+
+.copyright{
+    text-align: center;
+    font-size: 13px;
+    color: $color-Gray;
+}
