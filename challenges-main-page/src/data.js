@@ -80,4 +80,13 @@ export default [
       "https://github.com/jbuendia1y/frontend_mentor_challenges/assets/71197875/c42b5e8f-3f26-4e67-83f1-8fce441fb2c8",
     technologies: ["Vanilla", "ViteJS", "SCSS"],
   },
+  {
+    name: "article-preview-component",
+    url: "https://jbuendia1y.github.io/frontend_mentor_challenges/article-preview-component",
+    repository:
+      "https://github.com/jbuendia1y/frontend_mentor_challenges/tree/main/article-preview-component",
+    preview:
+      "https://github.com/jbuendia1y/frontend_mentor_challenges/assets/71197875/f906fc0a-e13f-4c40-ad13-c42532fdac20",
+    technologies: ["Vanilla", "ViteJS", "SCSS"],
+  },
 ];

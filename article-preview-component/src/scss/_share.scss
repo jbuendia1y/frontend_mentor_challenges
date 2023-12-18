@@ -1,0 +1,67 @@
+.share{
+    position: relative;
+    bottom: 67.5px;
+    display: flex;
+    align-items: center;
+    
+    width: 300px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    @media screen and (min-width : 1024px){
+        bottom: 90px;
+        left: 180px;
+    }
+
+    &__content{
+        padding: .7em 1em;
+        display: flex;
+        align-items: center;
+        visibility: hidden;
+    }
+
+    &__text{
+        text-transform: uppercase;
+        padding-left: .1em;
+        font-size: 15px;
+        letter-spacing: 5px;
+        font-family: $text;
+        color: $color-fondo;
+    }
+
+    &__icons{
+
+        &-facebook,&-twitter,&-pinterest{
+            color: white;
+            padding-left: .5em;
+        }
+    }
+
+    &__main-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        background-color: $color-card;
+        color: $color1;
+
+        width: 35px;
+        height: 35px;
+
+        margin-left: auto;
+        margin-right: 1.5em;
+
+        
+        border: none;
+        border-radius: 50%;
+
+        cursor: pointer;
+
+
+
+        &-img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

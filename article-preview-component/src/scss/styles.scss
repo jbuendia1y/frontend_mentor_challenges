@@ -1,0 +1,39 @@
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-size: 13px;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Variables */
+
+$color2     :hsl(217, 19%, 35%);
+$color1     :hsl(214, 17%, 51%);
+$color-fondo:hsl(212, 23%, 69%);
+$color-card :hsl(210, 46%, 95%);
+$text       : 'Manrope', sans-serif;
+
+
+
+/* Imports */
+@import "main-container";
+@import "text";
+@import "user";
+@import "share";
+@import "active.scss";
+
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+
+
+
+.attribution{
+    margin-top: auto;
+}

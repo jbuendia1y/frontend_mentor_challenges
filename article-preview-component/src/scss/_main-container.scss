@@ -1,0 +1,39 @@
+.main{
+    &-container{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: auto;
+
+        @media screen and (min-width : 1024px){
+            flex-direction: row;
+            width: 730px;
+            height: 300px;
+            margin-top: 25vh;
+        }
+    }
+
+    &-img{
+        height: 200px;
+        background-image: url(/images/drawers.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        @media screen and (min-width : 1024px){
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 10px;
+            height: 300px;
+            flex-basis: 700px;
+        }
+    }
+
+    &-content{
+        padding: 1em 1em;
+        padding-bottom: .5em;
+    }
+}
