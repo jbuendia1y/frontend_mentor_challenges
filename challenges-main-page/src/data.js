@@ -81,12 +81,21 @@ export default [
     technologies: ["Vanilla", "ViteJS", "SCSS"],
   },
   {
-    name: "article-preview-component",
+    name: "Article preview component",
     url: "https://jbuendia1y.github.io/frontend_mentor_challenges/article-preview-component",
     repository:
       "https://github.com/jbuendia1y/frontend_mentor_challenges/tree/main/article-preview-component",
     preview:
       "https://github.com/jbuendia1y/frontend_mentor_challenges/assets/71197875/f906fc0a-e13f-4c40-ad13-c42532fdac20",
+    technologies: ["Vanilla", "ViteJS", "SCSS"],
+  },
+  {
+    name: "Insure landing page",
+    url: "https://jbuendia1y.github.io/frontend_mentor_challenges/insure-landing-page",
+    repository:
+      "https://github.com/jbuendia1y/frontend_mentor_challenges/tree/main/insure-landing-page",
+    preview:
+      "https://github.com/jbuendia1y/frontend_mentor_challenges/assets/71197875/1c409fc9-5987-4dfc-9584-3fec0d53a4ef",
     technologies: ["Vanilla", "ViteJS", "SCSS"],
   },
 ];

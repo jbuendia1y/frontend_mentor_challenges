@@ -1,0 +1,86 @@
+.features{
+    margin-top: 6.5em;
+    &__box{
+        flex-direction: column;
+        position: relative;
+
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 150px;
+            height: 2px;
+            background-color: $Dark-Grayish-Violet;
+        }
+    }
+
+    &__title,&__subtitle{
+        font-family: $Font-Heads;
+    }
+    &__title{
+        font-size: 2.5em;
+    }
+    &__subtitle{
+        font-size: 1.5em;
+    }
+
+    &__paragraph{
+        margin: 0 auto;
+        line-height: 22.5px;
+        color: $Dark-Grayish-Violet;
+    }
+}
+
+.grid{
+    &__item{
+        margin: 3em 0;
+    }
+}
+@media screen and (min-width:1024px){
+    .features{
+        margin-top: 15em;
+
+        &__box{
+            &::before{
+                left: 0;
+            }
+        }
+
+        &__title{
+            font-size: 4em;
+            margin-right: auto;
+        }
+        &__subtitle{
+            font-size: 1.5em;
+        }
+        &__paragraph{
+            text-align: left;
+            line-height: 25px;
+        }
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3,33.3%);
+
+        &__item{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 1em;
+            margin-right: 1em;
+
+            &:nth-child(1){
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1440px){
+    .features{
+        &__paragraph{
+            padding-right: 1em;
+        }
+    }
+}
